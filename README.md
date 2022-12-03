@@ -18,8 +18,8 @@ Replace the opening tag **<** with **&lt ;** and the closing tag **>** with **&g
 
 Besides that, kindly do the ff:
 - Upload a formal image of you which will be displayed in "Meet the Team" section.
-- Provide a super concise description (not more than 8 words for each bullet) describing the school where you (1) graduated SHS, (2) your hobbies, and (3) your aspirations. For example: 
-    🌸 Graduated SHS at De La Salle University Dasmarinas
-    🌸 Loves reading, writing, and playing sports
-    🌸 Aspires to become a UI/UX designer
+- Provide a super concise description (not more than 8 words for each bullet) describing the school where you (1) graduated SHS, (2) your hobbies, and (3) your aspirations. For example: <br>
+    🌸 Graduated SHS at De La Salle University Dasmarinas <br>
+    🌸 Loves reading, writing, and playing sports <br>
+    🌸 Aspires to become a UI/UX designer <br>
  Where to upload image & descriptions: https://drive.google.com/drive/folders/10AK-rIr12Bga7MEhLasNsEoTmVR_Zd-k?usp=sharing
