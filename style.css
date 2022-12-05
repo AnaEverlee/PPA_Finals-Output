@@ -1,0 +1,280 @@
+/* 
+pink - #FBF1EE
+blue - #CFE7EB
+golden - #E2C252
+
+headings - "Noto Sans Display", sans-serif;
+paragraphs - 'Space Grotesk', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&family=Montserrat&family=Noto+Sans+Mono&family=Source+Code+Pro&display=swap');
+
+* {
+  box-sizing: border-box;  
+  margin:0;
+  padding:0;
+}
+
+li, a, p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+  }
+
+hr {
+    opacity: 0.5;
+}
+
+h1 {
+    font-family: Lexend, sans-serif;
+    font-size: 40px;
+  }
+
+.logo {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 8px;
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.nav__links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav__links li {
+    padding-left: 80px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #dcb218;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEF2F1;
+    height: auto;
+    margin: 0 50px 90px 50px;
+    padding: 110px 50px 50px 50px;
+    text-align: center;
+}
+
+.home h1, p {
+    margin-bottom: 30px; 
+}
+
+.home button {
+    margin-bottom: 50px;
+}
+
+.home p {
+    line-height: 30px;
+}
+
+button {
+    font-family: Lexend, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #dcb218;
+    border: none;
+    padding: 20px 30px 20px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #e9c542;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topics h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.box {
+    margin: 20px;
+    width: 350px;
+    height: 350px;
+    background-color: #FEF2F1;
+    display: flex;
+    flex-direction: column;
+}
+
+.box:hover {
+    background-color: #faafa7;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.box p {
+    color: inherit;
+}
+
+.box p, h2 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.box p {
+    margin: 130px 0 5px 0;
+    font-weight: regular;
+}
+
+.team h1 {
+    margin-bottom: 30px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.team-container {
+    display: grid;
+    grid-template-areas: 
+        "member1 member2"
+        "member3 member4";
+    justify-content: space-around;
+    line-height: 40px;
+}
+
+.member {
+    display: flex;
+    padding: 40px;
+}
+
+.dscrp {
+    margin-left: 20px;
+}
+
+.member img {
+    border: 7px solid #FBF1EE;
+}
+
+.footer {
+    height: 150px;
+    margin: 50px 50px 30px 50px;
+    background-color: #CAE8EC;
+    display: flex;
+}
+
+.footer p {
+    margin: auto;
+}
+
+.about-topic {
+    max-width: 50%;
+    text-align: justify;
+    margin-left: 100px;
+    margin-top: 50px;
+    line-height: 35px;
+}
+
+.about-topic h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.example {
+    line-height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.code {
+    background-color: #CFE7EB;
+    padding: 20px;
+    width: 40%;
+    max-height: fit-content;
+}
+
+.font-family-table {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.font-family-table h2, .about-font-properties h2 {
+    font-family: Lexend, sans-serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #FBF1EE;
+    line-height: 30px;
+  }
+
+td, th {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+td ul {
+    list-style-type: none;
+  }
+  
+ th {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    background-color: #FBF1EE;
+  }
+
+tr:nth-child(odd) {
+    background-color: #FBF1EE;;
+}
+
+.row-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.about-font-properties {
+    margin-left: 100px;
+    line-height: 40px;
+    max-width: 50%;
+    text-align: justify;
+}
+
+.html2, .css2, .html4, .css4 {
+    margin-bottom: 50px;
+}
+
+.border-radius {
+    line-height: 40px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
