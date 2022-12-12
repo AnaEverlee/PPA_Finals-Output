@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Powerpuff Academy</title>
+    </head>
+    <body>
+
+        <!--navigation menu **DO NOT ALTER**-->
+        <header id="Home">
+            <!--appoint someone to design logo-->
+            <img class="logo" src="img/logo.jpg" alt="logo" height="120px" width="135px">
+            <div class="header">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html#Home">Home</a></li>
+                        <li><a href="index.html#Topics">Topics</a></li>
+                        <li><a href="index.html#Team">Meet the Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr>
+        <div class="about-topic">
+            <h1>CSS Fonts</h1>
+            <p>
+                The font-family property in CSS allows you to set the desired font family. It is encouraged to include several font names as a ‘fallback’ system by separating each value with a comma (the desired font family should be placed first, followed by the subsequent values, then the generic family). If the browser/operating system does not support the initial font, it will display the subsequent font or a similar font in the generic family.
+            </p>
+        </div>
+
+        <!-- opening tag: &lt; 
+             closing tag: &gt; -->
+
+        <!-- add indentation tag -->
+        <div class="code-container">
+            <div class="code html1">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;html&gt; <br>
+                        &lt;head&gt; <br>
+                            &lt;link rel=“stylesheet” href=“style.css”&gt; <br>
+                            &lt;head&gt; <br>
+                            &lt;body&gt; <br>
+                            &lt;p class=“p1” &gt; The font used for this paragraph is Times New Roman.&gt; <br>
+                            &lt;p class=“p2” &gt; The font used for this paragraph is Arial.&gt; <br>
+                            &lt;body&gt; <br>
+                            &lt;html&gt; 
+                </p>
+            </div>
+            <div class="code css1">
+                <h2>CSS Code</h2>
+                <p>
+                    .p1 { <br>
+                        font-family: “Times New Roman”, Times, serif; <br>
+                       } <br>
+                       <br>
+                       Note: For font names that are more than one word such as Times New Roman, they must be placed between quotation marks.
+                       <br><br>
+                       .p2 { <br>
+                        font-family: Arial, Helvetica, sans-serif; <br>
+                       }                       
+                </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <p class="p1" style="font-family: 'Times New Roman';">
+                    The font used for this paragraph is Times New Roman.
+                </p>
+                <p class="p2" style="font-family: Arial;">
+                    The font used for this paragraph is Arial.
+                </p>
+            </div>
+        </div>
+
+        <!-- table section -->
+        <section class="font-family-table">
+        <div>
+            <h2>Generic Font Families</h2>
+        </div>
+        <table>
+            <!--table headings-->
+            <tr>
+              <th>Generic Font Family</th>
+              <th>Examples of Font Names</th>
+            </tr>
+            <!--row 1-->
+            <tr>
+              <td class="row-label">Serif</td>
+              <td>
+                <ul>
+                    <li style="font-family: 'Times New Roman', Times, serif;">Times New Roman</li>
+                    <li style="font-family: Georgia, 'Times New Roman', Times, serif;">Georgia</li>
+                    <li style="font-family: Garamond, serif;">Garamond</li>
+                </ul>
+              </td>
+            </tr>
+            <!--row 1-->
+            <tr>
+                <td class="row-label">Sans-serif</td>
+                <td>
+                  <ul>
+                      <li style="font-family: Arial, sans-serif;">Arial</li>
+                      <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Verdana</li>
+                      <li style="font-family: 'Montserrat', sans-serif;">Montserrat</li>
+                  </ul>
+                </td>
+            </tr>
+            <!--row 3-->
+            <tr>
+                <td class="row-label">Monospace</td>
+                <td>
+                  <ul>
+                      <li style="font-family: 'Courier New', Courier, monospace;">Courier New</li>
+                      <li style="font-family: 'Source Code Pro', monospace;">Source Code Pro</li>
+                      <li style="font-family: 'Noto Sans Mono', monospace;">Noto Sans Mono</li>
+                  </ul>
+                </td>
+            </tr>
+            <!--row 4-->
+            <tr>
+                <td class="row-label">Cursive</td>
+                <td>
+                  <ul>
+                      <li style="font-family: 'Cedarville Cursive', cursive; font-size: 18px;">Cedarville Cursive</li>
+                      <li style="font-family: 'Cookie', cursive; font-size: 20px;">Cookie</li>
+                  </ul>
+                </td>
+            </tr>
+            <!--row 4-->
+            <tr>
+                <td class="row-label">Fantasy</td>
+                <td>
+                  <ul>
+                      <li style="font-family: Copperplate, fantasy;">Copperplate</li>
+                      <li style="font-family: Papyrus, fantasy; font-size: 18px;">Papyrus</li>
+                  </ul>
+                </td>
+              </tr>
+          </table>
+        </section>
+
+    <!-- section two -->
+    <section class="font-properties">
+        <div class="about-font-properties">
+            <h2>Other ways to style text</h2>
+            <p>
+                Besides specifying the font-family, you can use the font-style and font-weight properties to turn the text into <i>italic</i> and <strong>bold</strong>, respectively.
+            </p>
+        </div>
+        <div class="code-container">
+            <div class="code html2">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                            &lt;link rel=“stylesheet” href=“style.css”&gt;<br>
+                    &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                            &lt;p class=“p1”&gt;This text is italicized.&lt;/p&gt;<br>
+                            &lt;p class=“p2”&gt;This text is bold.&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </p>
+            </div>
+            <div class="code css2">
+                <h2>CSS Code</h2>
+                <p>
+                    .p1 { <br>
+                        font-style: italic; <br>
+                       } <br><br>
+                       
+                       .p2 { <br>
+                        font-weight: bold; <br>
+                       }                                  
+                </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <p class="p1" style="font-style: italic;">
+                    This text is italicized.
+                </p>
+                <p class="p2" style="font-weight: bold;">
+                    This text is bold.
+                </p>
+            </div>
+        </div>
+        <br><br>
+    </section>
+    </body>
+</html>

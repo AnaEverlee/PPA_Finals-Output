@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Powerpuff Academy</title>
+    </head>
+    <body>
+        <!--navigation menu **DO NOT ALTER**-->
+        <header id="Home">
+            <!--appoint someone to design logo-->
+            <img class="logo" src="img/logo.jpg" alt="logo" height="120px" width="135px">
+            <div class="header">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html#Home">Home</a></li>
+                        <li><a href="index.html#Topics">Topics</a></li>
+                        <li><a href="index.html#Team">Meet the Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr>
+
+        <div class="about-topic">
+            <h1>CSS Styling Images</h1>
+            <p>
+                To adjust the height and width of an image, you can use the height and width property and assign a value with px (pixels) as its unit of measurement.
+            </p>
+        </div>
+
+        <div class="code-container">
+            <div class="code html3">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;html&gt; <br>
+                    &lt;head&gt; <br>
+                    &lt;link rel=“stylesheet” href=“style.css”&gt; <br>
+                    &lt;/head&gt; <br>
+                    &lt;body&gt; <br>
+                    &lt;img src=“cat.jpg” alt=“cat licking its paw”&gt; <br>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt;
+                </p>
+            </div>
+            <div class="code css3">
+                <h2>CSS Code</h2>
+                <p>
+                    img { <br>
+                        height: 300px; <br>
+                       } <br><br>
+                    Note: If you set the image's height, the width will automatically be adjusted.                                           
+                </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <img class="cat1" src="img/cat.jpg" alt="cat licking its paw" height="300px">
+            </div>
+        </div>
+
+        <div class="border-radius">
+            <h2>The border-radius property</h2>
+            <p>
+                The border-radius property can be used to round the corners of an image (this also applies to other elements like div). You can pass one to four values for this property. 
+            </p>
+        </div>
+
+        <div class="code-container">
+            <div class="code html4">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;html&gt; <br>
+                    &lt;head&gt; <br>
+                    &lt;link rel=“stylesheet” href=“style.css”&gt; <br>
+                    &lt;/head&gt; <br>
+                    &lt;body&gt; <br>
+                    &lt;img class=“cat” src=“cat.png”&gt; <br>
+                    &lt;img class=“dog” src=“cat.png”&gt; <br>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt; <br>
+                </p>
+            </div>
+            <div class="code css4">
+                <h2>CSS Code</h2>
+                <p>
+                    .cat { <br>
+                        border-radius: 30px; (this will round all four corners equally) <br>
+                       } <br><br>
+                       
+                       .dog { <br>
+                       border-radius: 100px 0; (first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners) <br>
+                       }                                                                    
+                </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <div class="animal-pictures">
+                        <img class="cat" src="img/cat.jpg" alt="cat licking its paw" height="300px">
+                        <img class="dog" src="img/dog.jpg" alt="dog with pink sunglasses" height="300px">
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </body>
+</html>
