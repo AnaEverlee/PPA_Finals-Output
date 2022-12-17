@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Powerpuff Academy</title>
+    </head>
+    <body>
+
+        <!--header-->
+        <header id="Home">
+            <!--appoint someone to design logo-->
+            <img class="logo" src="img/logo.jpg" alt="logo" height="120px" width="135px">
+            <div class="header">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html#Home">Home</a></li>
+                        <li><a href="index.html#Topics">Topics</a></li>
+                        <li><a href="index.html#Team">Meet the Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr>
+        <div class="about-topic">
+            <h1>CSS Selectors</h1><br>
+            <h2>What are Selectors?</h2>
+            <p>
+                The use of selector is to select and define the style that you want to style with CSS. CSS selector has different types which have their own syntax. In using selector there are two major ways you can do it. First one is when you have CSS and HTML in one docs you have to add CSS into the &lt;head&gt; of your webpage, but you can also have them in separate documents. If you keep them in separate documents you might have to label the HTML document into index.html and label the CSS documents into style.css. Index.html have to include the line of code referencing the CSS file.
+
+            </p>
+        </div>
+
+        <div class="example">
+            <div class="code html1">
+                <h2>HTML Code</h2>
+                <p>
+                &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt; <br>
+                        &lt;head&gt; <br>
+                            &lt;title&gt; CSS Selector &lt;/title&gt; <br>
+                            &lt;link rel="stylesheet" href="style.css"&gt; <br>
+                            &lt;/head&gt; <br>
+                            &lt;body&gt; <br>
+                            &lt;h1&gt;What are CSS selectors & How Do They Work?&lt;/h1&gt; <br>
+                            &lt;/body&gt; <br>
+                            &lt;/html&gt; 
+                </p>
+            </div>
+        </div>
+        <div class="about-topic">
+            	<h1>Class Selectors</h1>
+                <p>
+                	This type of selector selects only the HTML elements that have a specific class attribute. Using class selectors you must use dor(.) followers by the classname. The syntax for class selector is .classname{style properties}.<br><br>
+
+                    Ex. Let’s say I want to change all elements with class=”pastoral”to the color orange.
+				</p>
+           </div>
+        </div>
+           
+           <div class="example">
+                <div class="code html1">
+                    <h2> HTML Code </h2>
+                    <p>
+                        &lt;h1&gt; Not orange &lt;/h1&gt; <br>
+                        &lt;h1 class="pastoral"&gt;Very Orange &lt;/h1&gt;
+                    </p>
+                </div>
+                
+                <div class="code css1">
+                    <h2> CSS Code</h2>
+                    <p>
+                        .patoral{ <br>
+                        Color:orange <br>
+                        }<br>
+                     Given these rules,the first h1 would not have orange text and the second would. Here's the result:<br>
+                   </p>
+                </div>
+            </div>
+
+            <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <img class="" src="img/orange.jpg"  height="100px">
+            </div>
+        </div>
+
+            <div class="about-topic">
+                <h1>ID Selectors</h1>
+                <p>
+                    However this type of selector only uses the id attributes of an element to select specific elements. The syntax for these type is #idname{style properties}<br><br>
+
+                    Ex. Let’s say I want to change the color and alignment of the element with the id “hubspot.”
+                </p>
+           </div>
+        </div>
+           
+           <div class="example">
+                <div class="code html1">
+                    <h2> HTML Code </h2>
+                    <p>
+                        &lt;h1 id = "hubspot"&gt;#id selector&lt;/h1&gt; 
+                    </p>
+                </div>
+                
+                <div class="code css1">
+                    <h2> CSS Code</h2>
+                    <p>
+                        #hubspot{<br>
+                        Color:orange;<br>
+                        Text-align:right;<br>
+                        }
+                    </p>
+                </div>
+            </div>
+                    
+            <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <img class="" src="img/right.jpg"  height="100px">
+                <p>Note: An id should not start with a number. </p>
+            </div>
+        </div>
