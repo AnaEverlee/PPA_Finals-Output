@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Powerpuff Academy</title>
+    </head>
+    <style type="text/css">
+        * {
+            align-items: center;
+        }
+
+        .code-container {
+            margin: auto;
+            width: 70%;
+            padding: 10px;
+        }
+
+        .output-container {
+            margin: auto;
+            width: 70%;
+            padding: 10px;
+        }
+         
+        .others {
+            margin: auto;
+            width: 90%;
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <!--navigation menu **DO NOT ALTER**-->
+        <header id="Home">
+            <!--appoint someone to design logo-->
+            <img class="logo" src="img/logo.jpg" alt="logo" height="120px" width="135px">
+            <div class="header">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html#Home">Home</a></li>
+                        <li><a href="index.html#Topics">Topics</a></li>
+                        <li><a href="index.html#Team">Meet the Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr>
+
+        <div class="about-topic">
+            <h1>CSS Border</h1>
+            <p>
+                CSS Border indicates what style, width, color, and other properties we should use with an element. It serves as somewhat of a decoration that helps spice up the website/HTML code once it is runned. 
+
+                <br>
+
+                <i>Border-style</i> indicates what kind of border the user chose to display. There are <i>11</i> allowed border styles that can be used.
+            </p>
+        </div>
+
+            <div class="code-container">
+            <div class="code html1">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;!DOCTYPE html&gt; <br>
+                        &lt;head&gt; <br>
+                            &lt;link rel=“stylesheet” href=“style.css”&gt; <br>
+                            &lt;head&gt; <br>
+                            &lt;body&gt; <br>
+                            &lt;Dotted border&gt; <br>
+                            &lt;Dashed border&gt; <br>
+                            &lt;Solid border&gt; <br>
+                            &lt;Double border&gt; <br>
+                            &lt;Groove border&gt; <br>
+                            &lt;Ridge border&gt; <br>
+                            &lt;Inset border&gt; <br>
+                            &lt;Outset border&gt; <br>
+                            &lt;No border&gt; <br>
+                            &lt;Hidden border&gt; <br>
+                            &lt;Mixed border&gt; <br>
+                            &lt;body&gt; <br>
+                            &lt;html&gt; 
+                </p>
+            </div>
+            <div class="code css1">
+                <h2>CSS Code</h2>
+                <p>
+                p1 {
+                    border-style: dotted;
+                }
+                <br>
+                p2 {
+                    border-style: dashed;
+                }
+                <br>
+                p3 {
+                    border-style: solid;
+                }
+                  <br>
+                p4 {
+                    border-style: double;
+                }
+                  <br>
+                p5 {
+                    border-style: groove;
+                }
+                  <br>
+                p6 {
+                    border-style: ridge;
+                }
+                  <br>
+                p7 {
+                    border-style: inset;
+                }
+                  <br>
+                p8 {
+                    border-style: outset;
+                }
+                  <br>
+                p9 {
+                    border-style: none;
+                }
+                  <br>
+                p10 {
+                    border-style: hidden;
+                }
+                  <br>
+                p11 {
+                    border-style: dotted dashed solid double;
+                }
+                  <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <p class="p1" style="border-style: dotted;">
+                    Dotted border
+                </p>
+                <p class="p2" style="border-style: dashed;">
+                    Dashed border
+                </p>
+                <p class="p2" style="border-style: solid;">
+                    Solid border    
+                </p>
+                <p class="p2" style="border-style: double;">
+                    Double border    
+                </p>
+                <p class="p2" style="border-style: groove;">
+                    Groove border    
+                </p>
+                <p class="p2" style="border-style: ridge;">
+                    Ridge border    
+                </p>
+                <p class="p2" style="border-style: inset;">
+                    Inset border    
+                </p>
+                <p class="p2" style="border-style: outset;">
+                    Outset border    
+                </p>
+                <p class="p2" style="border-style: none;">
+                    No border    
+                </p>
+                <p class="p2" style="border-style: hidden;">
+                    Hidden border    
+                </p>
+                <p class="p2" style="border-style: dotted dashed solid double;">
+                    Mixed border  
+                </p>
+            </div>
+        </div>
+
+          
+    <section class="font-properties">
+        <div class="about-font-properties">
+            <h2>Other ways to style text</h2>
+            <p>
+               With <i>border-width</i>, it specifies the thickness or width of the four borders. In case with their measurements, the user can indicate from the 3 predefined values namely: thin, medium and thick, or they can be specific in size with the use of measurements such as in px, pt, cm, em or etc. If you want to be really specific with the thickness of the border, remember that there are one-four values (top border, right border, bottom border, left border).
+           </p>
+        </div>
+        <div class="code-container">
+            <div class="code html2">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;link rel=“stylesheet” href=“style.css”&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;p class=“one”&gt;Some text.&lt;/p&gt;<br>
+                        &lt;/html&gt;
+                </p>
+            </div>
+            <div class="code css2">
+                <h2>CSS Code</h2>
+                <p>
+                    p.one {
+                        border-style: solid;
+                        border-width: 35px 5px 9px 35px;
+                    }            
+                </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <p class="p1" style="border-style: solid; border-width: 5px;">
+                    Some text.
+                </p>
+                </div>
+        </div>
+
+        <p class="others">
+               <i>Border-color</i> is the property used to declare the color of the borders. You can also use the same property with <i>border-width</i> (top border, right border, bottom border, left border), just be specific with the color values to be used.
+
+           </p>
+        </div>
+        <div class="code-container">
+            <div class="code html2">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;link rel=“stylesheet” href=“style.css”&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;p class=“one”&gt;A solid multicolor border.&lt;/p&gt;<br>
+                        &lt;p class=“two”&gt;A solid one-color border.&lt;/p&gt;<br>
+                        &lt;/html&gt;
+
+                </p>
+            </div>
+            <div class="code css2">
+                <h2>CSS Code</h2>
+                <p>
+                    p.one {
+                        border-style: solid;
+                        border-color: red green blue yellow; 
+                    }
+                    <br>
+                    p.two {
+                         border-style: solid;
+                         border-color: purple;
+                    }
+                </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <p class="one" style="border-style: solid; border-color: red green blue yellow;">
+                    A solid multicolor border.
+                </p>
+
+                <p class="two" style="border-style: solid; border-color: purple;">
+                    A solid one-color border.
+                </p>
+                </div>
+        </div>
+        
+        <p class="others">
+               For context, <i>shorthand properties</i>> in CSS are used to make coding more short and time-efficient. For <i>border shorthand</i>, it sets the value of border-width, border-style and border-color & list them with the same order. 
+
+        </p>
+
+         <div class="code-container">
+            <div class="code html2">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;link rel=“stylesheet” href=“style.css”&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;p&gt;We used the shorthand property for this paragraph.&lt;/p&gt;<br>                
+                        &lt;/html&gt;
+
+                </p>
+            </div>
+            <div class="code css2">
+                <h2>CSS Code</h2>
+                <p>
+                    p {
+                     border: 10px dotted blue;
+                    }
+               </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <p class="one" style="border: 10px dotted blue;">
+                    We used the shorthand property for this paragraph.
+                </p>               
+            </div>
+        </div>
+
+        <p class="others">
+              CSS <i>Rounded Border</i> is used to add roundness to the outer corner of the borders. We use the property border-radius to declare rounded borders for HTML. 
+
+        </p>
+
+         <div class="code-container">
+            <div class="code html2">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;link rel=“stylesheet” href=“style.css”&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;p&gt;You can see the rounded borders as you run the code.&lt;/p&gt;<br>                
+                        &lt;/html&gt;
+
+                </p>
+            </div>
+            <div class="code css2">
+                <h2>CSS Code</h2>
+                <p>
+                   p {
+                    border: 2px solid red;
+                    <br>
+                    border-radius: 12px;
+                    <br>
+                    padding: 5px;
+                    }
+               </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <p class="one" style="border: 2px solid red; border-radius: 12px; padding: 5px;">
+                   You can see the rounded borders as you run the code.
+                </p>               
+            </div>
+        </div>
+
+
+        <br><br>
+    </section>
+    </body>
+</html>
