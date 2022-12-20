@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Powerpuff Academy</title>
+    </head>
+
+    <style type="text/css">
+        * {
+            align-items: center;
+        }
+
+        .code-container {
+            margin: auto;
+            width: 70%;
+            padding: 10px;
+        }
+
+        .output-container {
+            margin: auto;
+            width: 70%;
+            padding: 10px;
+        }
+         
+        .others {
+            margin: auto;
+            width: 85%;
+            padding: 10px;
+        }
+    </style>
+        <body>
+        
+        <header id="Home">
+            <img class="logo" src="img/logo.jpg" alt="logo" height="120px" width="135px">
+            <div class="header">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html#Home">Home</a></li>
+                        <li><a href="index.html#Topics">Topics</a></li>
+                        <li><a href="index.html#Team">Meet the Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr>
+
+        <div class="about-topic">
+            <h1>CSS Colors</h1>
+            <p>
+                Under the CSS data type is color. This is used to represent color names, RGB, HEX, HSL, RGBA, HSLA values. The CSS color property sets the foreground color value and current color value of an element's text, decorations, padding and border. 
+
+                In order to change font color, you need to choose which part of the HTML we want to change the text color; for this example, we want to change the heading (h1), and the two paragraphs (p1, p2). The next step is we will define the color property for the chosen HTML tags: in this case, we used color name (yellow), HEX value (#FF0000) and RGBA value (rgba(15, 10, 222, 1).
+            </p>
+        </div>
+
+            <div class="code-container">
+            <div class="code html1">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;!DOCTYPE html&gt; <br>
+                        &lt;head&gt; <br>
+                            &lt;link rel=“stylesheet” href=“style.css”&gt; <br>
+                            &lt;head&gt; <br>
+                            &lt;body&gt; <br>
+                            &lt;The color of the heading is Yellow.&gt; <br>
+                            &lt;The color of this paragraph is #FF0000.&gt; <br>
+                            &lt;The color of this paragraph is rgba(15, 10, 222, 1). &gt; <br>
+                            &lt;body&gt; <br>
+                            &lt;html&gt; 
+                </p>
+            </div>
+            <div class="code css1">
+                <h2>CSS Code</h2>
+                <p>
+                    .h1{
+                        color: yellow;
+                    }
+
+                    p1{
+                        color:#FF0000;
+                    }
+
+                    p2{
+                        color:rgba(15, 10, 222, 1);
+                    }
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <h3 class="h1" style="color:yellow;">
+                    The color of the heading is Yellow.
+                </p>
+                <p class="p2" style="color: #FF0000;">
+                    The color of this paragraph is #FF0000.
+                </p>
+                <p class="p2" style="color:rgba(15, 10, 222, 1);">
+                    The color of this paragraph is rgba(15, 10, 222, 1).
+                </p>
+            </div>
+        </div>
+
+    <p class="others">
+               RGBA values are under RGB color values with alpha channel - which indicates the opacity of the color. Color names like black, red, blue and yellow are predefined and can easily show after running the code. 
+
+                If the user wants a more specific color, with opacity included, they may opt to use <i>HEX</i> or <i>RGB</i>. <i>HEX values</i>, or hexadecimal values, starts with a hashtag (#) sign, then the first 2 letters or numbers (e.g. #FF0000) refers to red, the following letters/numbers (e.g. #0080FF) indicate green and the last two numbers (e.g. #0000FF) refers to blue. Always remember that when it comes with HEX colors, it is specified with #rrggbb. 
+
+                With <i>RGB values</i>, it displays the light sources red, blue and green. <i>RGB color values</i> are equivalent to the intensity of colors from the lowest being 0 until the highest value being 255. For example, rgb(0, 255, 0) will show as neon green, as the middle number, 255, is equivalent to green, and the intensity of color is the highest, resulting in neon green. In RGB values, we need to take note of rgb(red, green, blue), substituting the color names with the chosen number values that indicates the intensity that will be used.
+
+    <br>
+    <br>
+    </p>
+   
+    <section class="font-properties">
+        <div class="about-font-properties">
+            <h2>Other ways to change color</h2>
+            <p>
+               Changing the background color of the HTML or text is just the same as how you change the color of the text, the only difference is that we will use the property <i>background-color</i> to see the background change.
+
+            </p>
+        </div>
+        <div class="code-container">
+            <div class="code html2">
+                <h2>HTML Code</h2>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                        &lt;head&gt;<br>
+                            &lt;link rel=“stylesheet” href=“style.css”&gt;<br>
+                    &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                            &lt;p class=“p1”&gt;The color of the background is Blue and the text is White.&lt;/p&gt;<br>
+                            &lt;p class=“p2”&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </p>
+            </div>
+            <div class="code css2">
+                <h2>CSS Code</h2>
+                <p>
+                    h1{
+                        background-color: blue;
+                        color:white;
+                    }
+                               
+                </p>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <h2>Output</h2>
+                <p class="p1">
+                    The color of the background is Blue and the text is White.
+                </p>
+                <p class="p2" style="background-color: blue; color:white;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+        <br><br>
+    </section>
+    </body>
+</html>
