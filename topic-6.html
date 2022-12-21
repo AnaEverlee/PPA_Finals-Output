@@ -1,41 +1,5 @@
 <!DOCTYPE html>
     <head>
-      <style>
-        .box {
-      /* Set the width and height of the box */
-      width: 500px;
-      height: 300px;
-  
-    }
-
-    /* Define a class for the content */
-    .content {
-      /* Set the background color of the content */
-      background-color: lightgrey;
-
-      /* Add some padding around the content */
-      padding: 20px;
-    }
-
-    /* Define a class for the padding */
-    .padding {
-      /* Set the padding within the box */
-      padding: 20px;
-      background-color: grey;
-    }
-
-    /* Define a class for the border */
-    .border {
-      /* Add a border around the box */
-      border: 10px solid green;
-    }
-
-    /* Define a class for the margin */
-    .margin {
-      /* Set the margins around the box */
-      margin: 20px;
-
-    } </style>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <title>Powerpuff Academy</title>
@@ -58,168 +22,285 @@
         </header>
         <hr>
         <div class="about-topic">
-            <h1>CSS Box Model</h1>
+            <h1>CSS Box Model</h1><br>
             <p>
-            It is a set of rules that help you determine how the items are displayed in your web page. This model has a box rectangle to be specific that is only generated for HTML elements. Each box has their own dimension, type, positioning, relationship to others, and external factors like viewport size. It consists of content, padding, a border, and margin. Box model is a box that wraps around every HTML. It also lets the users add borders to every element.
-        </p>
-    </div>
+                It is a set of rules that help you determine how the items are displayed in your web page. This model has a box rectangle to be specific that is only generated for HTML elements. Each box has their own dimension, type, positioning, relationship to others, and external factors like viewport size. It consists of content, padding, a border, and margin. Box model is a box that wraps around every HTML. It also lets the users add borders to every element.
 
-    <div class="code-container">
-        <div class="code html6">
-            <h2>HTML Code</h2>
-            <p>
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;link rel="stylesheet" href="style.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class="box"&gt;
-&lt;div class="content"&gt;
-&lt;h1>Box Model&lt;/h1&gt;
-&lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="padding"&gt;
-&lt;div class="content"&gt;
-&lt;h1>Box Model&lt;/h1&gt;
-&lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="border"&gt;
-&lt;div class="padding"&gt;
-&lt;div class="content"&gt;
-&lt;h1>Box Model&lt;/h1&gt;
-&lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;<
-&lt;/div&gt;
-&lt;div class="margin"&gt;
-&lt;div class="border"&gt;<
-&lt;div class="padding"&gt;
-&lt;div class="content"&gt;
-&lt;h1&gt;Box Model&lt;/h1&gt;
-&lt;p&gt;This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+            </p>
+        </div>
 
-            </b></i></pre></p>
+        <div class="example">
+            <div class="code html1">
+                <h2>HTML Code</h2>
+                <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;head&gt; <br>
+                        &lt;title&gt; Box Model &lt;/title&gt; <br>
+                        &lt;link rel="stylesheet" href="style.css"&gt; <br>
+                        &lt;/head&gt; <br>
+                        &lt;body&gt; <br>
+                        &lt;h1&gt;The CSS box model is essentially a box that wraps around every HTML element.&lt;/h1&gt; <br>
+                        &lt;/body&gt; <br>
+                        &lt;/html&gt; 
+                </p>
+            </div>
+        </div>
 
-<div class="about-topic">
- <h1>CSS Content</h1>
-            <p>
-This is used to insert generated content into an element. It includes any type of text, images, and even other HTML elements. The content is the actual content of the element, it is the innermost part of the box model and is surrounded by the padding.
- <div class="output-container">
-            <div class="output">
-            <h2>Output</h2>
-                <img class="" src="img/content.jpg"  height="100px">
-            <h1>CSS Paddings</h1>
-            <p>
-            This is the space between the content and the border. It's a property that can be used to set the padding for all four sides of an element at once. The padding is the space around the content within the element. It is the area between the content and the border. The padding can be set using the padding property in CSS.
-           <div class="output-container">
-            <div class="output">
-            <h2>Output</h2>
-            <img class="" src="img/padding.jpg"  height="100px">
- <h1>CSS Border</h1>
-            <p>
-            This is used to specify the appearance of the border around an element. The border itself can be a single line or a combination of lines (a border edge), and can have a different appearance on each side of the element. The border can be used to set the width, style, and color.The border is a line that surrounds the padding and content of the element. It is the outermost part of the box model, aside from the margins. The border can be set using the border property in CSS.
-             <div class="output-container">
-            <div class="output">
-            <h2>Output</h2>
-             <img class="" src="img/border.jpg"  height="100px">
-             <h1>CSS Margin</h1>
-            <p>
-            This is the space outside the border. It's used to specify the size of the margins around an element. It can be set for individual sides of an element (top, right, bottom, left) or for all sides at once. Its values for the margin property can be specified using length units, percentages, or the keywords "auto" or "inherit". The margin is the space outside the border, around the element. It is the space between the border of the element and the other elements on the page. The margin can be set using the margin property in CSS.
+        <div class="about-topic">
+                <h1>CSS Content</h1>
+                <p>
+                    is used to insert generated content into an element. It includes any type of text, images, and even other HTML elements. The content is the actual content of the element, it is the innermost part of the box model and is surrounded by the padding.<br>
+                </p>
+           </div>
+        </div>
+           
+           <div class="example">
+                <div class="code html1">
+                    <h2> HTML Code </h2>
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;link rel="stylesheet" href="style.css"&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;div class="box"&gt;<br>
+                        &lt;div class="content"&gt;<br>
+                        &lt;h1>Box Model&lt;/h1&gt;<br>
+                        &lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </p>
+                </div>
+                
+                <div class="code css1">
+                    <h2>CSS Code</h2>
+                    <p>
+                        .box {<br>
+                        width: 500px;<br>
+                        height: 300px;<br>
+                        }<br>
+
+                        .content {<br>
+                        background-color: lightgrey;<br>
+                        padding: 20px;<br>
+                        }<br>
+
+                   </p>
+                </div>
+            </div>
+
+            <div class="example">
             <div class="output-container">
-            <div class="output">
-            <h2>Output</h2>
-            <img class="" src="img/margin.jpg"  height="100px">
-            
-            <div class="code-container">
-        <div class="code html6">
-            <h2>HTML Code</h2>
-            <p>
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;link rel="stylesheet" href="style.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class="box"&gt;
-    &lt;div class="content"&gt;
-      &lt;h1>Box Model&lt;/h1&gt;
-      &lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="padding"&gt;
-      &lt;div class="content"&gt;
-        &lt;h1>Box Model&lt;/h1&gt;
-        &lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="border"&gt;
-      &lt;div class="padding"&gt;
-        &lt;div class="content"&gt;
-          &lt;h1>Box Model&lt;/h1&gt;
-          &lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;<
-    &lt;/div&gt;
-    &lt;div class="margin"&gt;
-      &lt;div class="border"&gt;<
-        &lt;div class="padding"&gt;
-          &lt;div class="content"&gt;
-            &lt;h1&gt;Box Model&lt;/h1&gt;
-            &lt;p&gt;This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+                <br>
+                <h2>Output</h2>
+                <img class="" src="img/content.jpg"  height="100px">
+            </div>
+            </div>
 
-            </pre></p>
-            <div class="code css1">
-                <h2>CSS Code</h2>
-                <p><pre>
-                .box {
-      /* Set the width and height of the box */
-      width: 500px;
-      height: 300px;
+            <div class="about-topic">
+                <h1>CSS Paddings</h1>
+                <p>
+                    This is the space between the content and the border. It's a property that can be used to set the padding for all four sides of an element at once. The padding is the space around the content within the element. It is the area between the content and the border. The padding can be set using the padding property in CSS.<br>
+                </p>
+           </div>
+        </div>
+           
+           <div class="example">
+                <div class="code html1">
+                    <h2> HTML Code </h2>
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;link rel="stylesheet" href="style.css"&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;div class="box"&gt;<br>
+                        &lt;div class="padding"&gt;<br>
+                        &lt;div class="content"&gt;<br>
+                        &lt;h1>Box Model&lt;/h1&gt;<br>
+                        &lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </p>
+                </div>
+                
+                <div class="code css1">
+                    <h2>CSS Code</h2>
+                    <p>
+                        .box {<br>
+                        width: 500px;<br>
+                        height: 300px;<br>
   
-    }
+                        }<br>
 
-    /* Define a class for the content */
-    .content {
-      /* Set the background color of the content */
-      background-color: lightgrey;
+                        .content {<br>
 
-      /* Add some padding around the content */
-      padding: 20px;
-    }
+                        background-color: lightgrey;<br>
+                        padding: 20px;<br>
+                        }<br>
 
-    /* Define a class for the padding */
-    .padding {
-      /* Set the padding within the box */
-      padding: 20px;
-      background-color: grey;
-    }
+                        .padding {<br>
+                        padding: 20px;<br>
+                        background-color: grey;<br>
+                        }<br>
 
-    /* Define a class for the border */
-    .border {
-      /* Add a border around the box */
-      border: 10px solid green;
-    }
+                   </p>
+                </div>
+            </div>
 
-    /* Define a class for the margin */
-    .margin {
-      /* Set the margins around the box */
-      margin: 20px;
+            <div class="example">
+            <div class="output-container">
+                <br>
+                <h2>Output</h2>
+                <img class="" src="img/padding.jpg"  height="100px">
+            </div>
+            </div>
 
-    }
+            <div class="about-topic">
+                <h1>CSS Border</h1>
+                <p>
+                    is used to specify the appearance of the border around an element. The border itself can be a single line or a combination of lines (a border edge), and can have a different appearance on each side of the element. The border can be used to set the width, style, and color. The border is a line that surrounds the padding and content of the element. It is the outermost part of the box model, aside from the margins. The border can be set using the border property in CSS.<br>
+                </p>
+           </div>
+        </div>
+           
+           <div class="example">
+                <div class="code html1">
+                    <h2> HTML Code </h2>
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;link rel="stylesheet" href="style.css"&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;div class="box"&gt;<br>
+                        &lt;div class="border"&gt;<br>
+                        &lt;div class="padding"&gt;<br>
+                        &lt;div class="content"&gt;<br>
+                        &lt;h1>Box Model&lt;/h1&gt;<br>
+                        &lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </p>
+                </div>
+                
+                <div class="code css1">
+                    <h2>CSS Code</h2>
+                    <p>
+                        .box {<br>
+                        width: 500px;<br>
+                        height: 300px;<br>
+  
+                        }<br>
 
-</pre></p>
+                        .content {<br>
+                        background-color: lightgrey;<br>
+                        padding: 20px;<br>
+                        }<br>
+
+                        .padding {<br>
+                        padding: 20px;<br>
+                        background-color: grey;<br>
+                        }<br>
+
+                        .border {<br>
+                        border: 10px solid green;<br>
+                        }<br>
+                   </p>
+                </div>
+            </div>
+
+            <div class="example">
+            <div class="output-container">
+                <br>
+                <h2>Output</h2>
+                <img class="" src="img/border.jpg"  height="100px">
+            </div>
+        </div>
+
+        <div class="about-topic">
+                <h1>CSS Margins</h1>
+                <p>
+                    This is the space outside the border. It's used to specify the size of the margins around an element. It can be set for individual sides of an element (top, right, bottom, left) or for all sides at once. Its values for the margin property can be specified using length units, percentages, or the keywords "auto" or "inherit". The margin is the space outside the border, around the element. It is the space between the border of the element and the other elements on the page. The margin can be set using the margin property in CSS.<br>
+                </p>
+           </div>
+        </div>
+           
+           <div class="example">
+                <div class="code html1">
+                    <h2> HTML Code </h2>
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;link rel="stylesheet" href="style.css"&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;div class="box"&gt;<br>
+                        &lt;div class="margin"&gt;<br>
+                        &lt;div class="border"&gt;<br>
+                        &lt;div class="padding"&gt;<br>
+                        &lt;div class="content"&gt;<br>
+                        &lt;h1>Box Model&lt;/h1&gt;<br>
+                        &lt;p>This box demonstrates the different parts of the box model in HTML and CSS.&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </p>
+                </div>
+                
+                <div class="code css1">
+                    <h2>CSS Code</h2>
+                    <p>
+                        .box {<br>
+                        width: 500px;<br>
+                        height: 300px;<br>
+                        }<br>
+
+                        .content {<br>
+                        background-color: lightgrey;<br>
+
+                        padding: 20px;<br>
+                        }<br>
+
+                        .padding {<br>
+                        padding: 20px;<br>
+                        background-color: grey;<br>
+                        }<br>
+
+                        .border {<br>
+                        border: 10px solid green;<br>
+                        }<br>
+
+                        .margin {<br>
+                        margin: 20px;<br>
+                        }<br>
+
+                   </p>
+                </div>
+            </div>
+
+            <div class="example">
+            <div class="output-container">
+                <br>
+                <h2>Output</h2>
+                <img class="" src="img/margin.jpg"  height="100px">
+            </div>
+        </div>
+    </body>
+    </html>
